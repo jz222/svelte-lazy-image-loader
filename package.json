@@ -13,6 +13,9 @@
     "rollup-plugin-svelte": "^5.0.0",
     "svelte": "^3.0.0"
   },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  },
   "keywords": [
     "svelte"
   ],
@@ -21,8 +24,9 @@
     "index.mjs",
     "index.js"
   ],
-  "description": "*Psst — looking for an app template? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*",
+  "description": "Shows a loading animation while loading an image.",
   "version": "1.0.0",
   "author": "Timo Zimmermann",
+  "repository": "https://github.com/jz222/svelte-lazy-image-loader",
   "license": "ISC"
 }
