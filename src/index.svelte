@@ -45,9 +45,9 @@
         left: 0;
         width: 50%;
         height: 100%;
-        background: -webkit-gradient(linear, left top, right top, color-stop(20%, transparent), to(#dddddd));
-        background: -o-linear-gradient(left, transparent 20%, #dddddd 100%);
-        background: linear-gradient(90deg, transparent 20%, #dddddd 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(20%, transparent), to(#E5E5E5));
+        background: -o-linear-gradient(left, transparent 20%, #E5E5E5 100%);
+        background: linear-gradient(90deg, transparent 20%, #E5E5E5 100%);
     }
 
     .shimmer:after {
@@ -57,9 +57,9 @@
         right: 0;
         width: 50%;
         height: 100%;
-        background: -webkit-gradient(linear, left top, right top, from(#dddddd), color-stop(20%, transparent));
-        background: -o-linear-gradient(left, #dddddd 0%, transparent 20%);
-        background: linear-gradient(90deg, #dddddd 0%, transparent 20%);
+        background: -webkit-gradient(linear, left top, right top, from(#E5E5E5), color-stop(20%, transparent));
+        background: -o-linear-gradient(left, #E5E5E5 0%, transparent 20%);
+        background: linear-gradient(90deg, #E5E5E5 0%, transparent 20%);
     }
 
     img {
