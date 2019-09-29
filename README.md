@@ -10,13 +10,6 @@ Shows a loading animation while loading an imagine.
 
 ![enter image description here](https://i.imgur.com/aSlEjAN.gif)
 
-## Usage
-**npm**
-`npm i --save svelte-lazy-image-loader`
-
-**yarn**
-`yarn add svelte-lazy-image-loader`
-
 ## API
 
 |Props| Value|
