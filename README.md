@@ -1,33 +1,65 @@
-*Psst — looking for an app template? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*
+# Svelte Lazy Image Loader
 
----
+Shows a loading animation while loading an imagine.
 
-# component-template
+**Without placeholder animation:**
 
-A base for building shareable Svelte components. Clone it with [degit](https://github.com/Rich-Harris/degit):
+![enter image description here](https://i.imgur.com/aUQmZTs.gif)
 
-```bash
-npx degit sveltejs/component-template my-new-component
-cd my-new-component
-npm install # or yarn
+**With placeholder:**
+
+![enter image description here](https://i.imgur.com/aSlEjAN.gif)
+
+## Usage
+**npm**
+`npm i --save svelte-lazy-image-loader`
+
+**yarn**
+`yarn add svelte-lazy-image-loader`
+
+## API
+
+|Props| Value|
+|--|--|
+|url|image url as string|
+|alt|alt text as string|
+|imageWidth|width of the image as string. Defaults to 100%.|
+|imageHeight|height of the image as string|
+|placeholderWidth|width of the placeholder as string. Defaults to 100%.|
+|placeholderHeight|height of the placeholder as string. Defaults to 400px.|
+
+## Examples
+
+Default placeholder:
+
+```javascript
+<script>
+	import ImageLoader from 'svelte-lazy-image-loader';
+</script>
+
+<ImageLoader
+	url="https://example.com/image.png"
+	alt="example image"
+	imageWidth="500px"
+	imageHeight="200px"
+	placeholderWidth="500px"
+	placeholderHeight="200px"
+/>
 ```
 
-Your component's source code lives in `src/index.svelte`.
+Custom placeholder:
 
-TODO
+```javascript
+<script>
+	import ImageLoader from 'svelte-lazy-image-loader';
+</script>
 
-* [ ] some firm opinions about the best way to test components
-* [ ] update `degit` so that it automates some of the setup work
-
-
-## Setting up
-
-* Run `npm init` (or `yarn init`)
-* Replace this README with your own
-
-
-## Consuming components
-
-Your package.json has a `"svelte"` field pointing to `src/index.svelte`, which allows Svelte apps to import the source code directly, if they are using a bundler plugin like [rollup-plugin-svelte](https://github.com/rollup/rollup-plugin-svelte) or [svelte-loader](https://github.com/sveltejs/svelte-loader) (where [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config includes `"svelte"`). **This is recommended.**
-
-For everyone else, `npm run build` will bundle your component's source code into a plain JavaScript module (`index.mjs`) and a UMD script (`index.js`). This will happen automatically when you publish your component to npm, courtesy of the `prepublishOnly` hook in package.json.
+<ImageLoader
+	url="https://example.com/image.png"
+	alt="example image"
+	imageHeight="200px"
+	placeholderHeight="200px"
+>
+	<div>loading</div>
+</ImageLoader>
+```
