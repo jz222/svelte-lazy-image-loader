@@ -17,7 +17,11 @@
     "svelte": "^3.0.0"
   },
   "keywords": [
-    "svelte"
+    "svelte",
+    "lazy",
+    "image",
+    "loader",
+    "placeholder"
   ],
   "files": [
     "src",
