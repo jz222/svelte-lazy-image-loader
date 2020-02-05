@@ -7,21 +7,19 @@
     export let imageHeight = '';
     export let placeholderWidth = '100%';
     export let placeholderHeight = '400px';
+    export let styling = '';
 
     let image;
     let loaded = false;
 
     onMount(() => {
-
         image.src = url;
 
         image.onload = () => {
             loaded = true;
-            image.style.cssText = `width: ${imageWidth}; height: ${imageHeight}`;
+            image.style.cssText = `width: ${imageWidth}; height: ${imageHeight};` + styling;
         };
-
     });
-
 </script>
 
 <style>
