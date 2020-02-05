@@ -29,7 +29,7 @@
     "index.js"
   ],
   "description": "Shows a loading animation while loading an image.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Timo Zimmermann",
   "repository": "https://github.com/jz222/svelte-lazy-image-loader",
   "license": "ISC"
