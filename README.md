@@ -22,14 +22,15 @@ Shows a loading animation while loading an imagine.
 
 ## API
 
-|Props| Value|
-|--|--|
-|url|image url as string|
-|alt|alt text as string|
-|imageWidth|width of the image as string. Defaults to 100%.|
-|imageHeight|height of the image as string|
-|placeholderWidth|width of the placeholder as string. Defaults to 100%.|
-|placeholderHeight|height of the placeholder as string. Defaults to 400px.|
+| Props             | Value                                                   |
+|-------------------|---------------------------------------------------------|
+| url               | image url as string                                     |
+| alt               | alt text as string                                      |
+| imageWidth        | width of the image as string. Defaults to 100%.         |
+| imageHeight       | height of the image as string                           |
+| placeholderWidth  | width of the placeholder as string. Defaults to 100%.   |
+| placeholderHeight | height of the placeholder as string. Defaults to 400px. |
+| styling           | CSS properties as string                                |
 
 ## Examples
 
@@ -47,6 +48,7 @@ Default placeholder:
 	imageHeight="200px"
 	placeholderWidth="500px"
 	placeholderHeight="200px"
+    styling="margin-right: 1rem; padding: 1rem;"
 />
 ```
 
