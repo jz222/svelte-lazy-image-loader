@@ -48,7 +48,7 @@ Default placeholder:
 	imageHeight="200px"
 	placeholderWidth="500px"
 	placeholderHeight="200px"
-    styling="margin-right: 1rem; padding: 1rem;"
+	styling="margin-right: 1rem; padding: 1rem;"
 />
 ```
 
