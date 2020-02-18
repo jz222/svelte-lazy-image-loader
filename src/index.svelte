@@ -12,6 +12,12 @@
     let image;
     let loaded = false;
 
+    $: {
+        if (loaded) {
+            image.src = url;
+        }
+    }
+
     onMount(() => {
         image.src = url;
 
